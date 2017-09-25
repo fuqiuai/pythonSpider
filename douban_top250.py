@@ -8,7 +8,6 @@ import time
 import os
 
 def getImg(url,params,start):
-    '''获取豆瓣top250电影及封面'''
     response=requests.get(url,params=params,timeout=10) 
     soup=BeautifulSoup(response.text,'lxml') 
 
